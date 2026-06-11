@@ -1,0 +1,11 @@
+fastapi>=0.116.0
+uvicorn>=0.35.0
+langchain>=0.3.27
+langchain-community>=0.3.29
+langchain-text-splitters>=0.3.9
+langchain-chroma>=0.2.6
+langchain-huggingface>=0.3.1
+pypdf>=6.0.0
+python-multipart>=0.0.20
+huggingface_hub>=0.34.0
+python-dotenv
