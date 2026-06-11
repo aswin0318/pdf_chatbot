@@ -26,7 +26,6 @@ llm = ChatBedrock(
     }
 )
 
-parser = StrOutputParser()
 
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
