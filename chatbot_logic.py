@@ -133,20 +133,20 @@ def ask_question(query):
     history = format_chat_history()
 
     prompt = f"""
-You are a helpful assistant.
+        You are a helpful assistant.
 
-Use the provided context and previous conversation
-to answer the user's question.
+        Use the provided context and previous conversation
+        to answer the user's question.
 
-Previous Conversation:
-{history}
+        Previous Conversation:
+        {history}
 
-Context:
-{context}
+        Context:
+        {context}
 
-Question:
-{query}
-"""
+        Question:
+        {query}
+        """
 
     chain = llm | parser
 
