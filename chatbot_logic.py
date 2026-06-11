@@ -9,7 +9,6 @@ from langchain_chroma import Chroma
 from langchain_aws import ChatBedrock
 from langchain_aws import BedrockEmbeddings
 
-from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
