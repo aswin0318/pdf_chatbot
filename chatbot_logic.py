@@ -14,7 +14,8 @@ from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 
 embedding_model = BedrockEmbeddings(
-    model_id="amazon.titan-embed-text-v2:0"
+    model_id="amazon.titan-embed-text-v2:0",
+    region_name="us-east-1"
 )
 
 llm = ChatBedrock(
@@ -158,4 +159,4 @@ Question:
         }
     )
 
-    return answer
+    return answer.content
