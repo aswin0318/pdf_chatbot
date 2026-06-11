@@ -147,9 +147,9 @@ def ask_question(query):
         {query}
         """
 
-    chain = llm | parser
 
-    answer = chain.invoke(prompt)
+    response = llm.invoke(prompt)
+    answer = response.content
 
     chat_history.append(
         {
@@ -158,4 +158,4 @@ def ask_question(query):
         }
     )
 
-    return answer.content
+    return answer
